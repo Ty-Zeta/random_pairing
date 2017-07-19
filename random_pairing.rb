@@ -7,7 +7,4 @@ def pairing(names)
       pairs[0] << last_one
     end
     pairs
-    p pairs
 end
-
-#pairs[0] << pairs[-1]
