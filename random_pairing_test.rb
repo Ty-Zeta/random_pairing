@@ -13,11 +13,11 @@ class TestRandomPairing < Minitest::Test
   #   assert_equal([["Katie Collins", "Aaron Camersi"], ["Derrick Gillispie", "Andrew Farley"], ["Adrian Sauls", "John Murphy"], ["Steven Miller", "Victoria Frame"], ["Stephanie Frame", "Chris Phelps"], ["Derick West", "Ty Cook"], ["Robert Caldwell", "Marcus Folks"], ["Tyler Richards", "Mike Handy"]], pairing(names))
   # end
 
-  # def test_number_pairs
-  #   names = ["Katie Collins", "Aaron Camersi", "Derrick Gillispie", "Andrew Farley", "Adrian Sauls", "John Murphy", "Steven Miller", "Victoria Frame", "Stephanie Frame", "Chris Phelps", "Derick West", "Ty Cook", "Robert Caldwell", "Marcus Folks", "Tyler Richards", "Mike Handy"]
-  #   results = pairing(names)
-  #   assert_equal(8, results.count)
-  # end
+  def test_number_pairs
+    names = ["Katie Collins", "Aaron Camersi", "Derrick Gillispie", "Andrew Farley", "Adrian Sauls", "John Murphy", "Steven Miller", "Victoria Frame", "Stephanie Frame", "Chris Phelps", "Derick West", "Ty Cook", "Robert Caldwell", "Marcus Folks", "Tyler Richards", "Mike Handy"]
+    results = pairing(names)
+    assert_equal(8, results.count)
+  end
 
   def test_number_pairs_with_odd
     names = ["Katie Collins", "Aaron Camersi", "Derrick Gillispie", "Andrew Farley", "Adrian Sauls", "John Murphy", "Steven Miller", "Victoria Frame", "Stephanie Frame", "Chris Phelps", "Derick West", "Ty Cook", "Robert Caldwell", "Marcus Folks", "Tyler Richards", "Mike Handy", "Billy Bob"]
