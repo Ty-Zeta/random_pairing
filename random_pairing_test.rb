@@ -19,6 +19,7 @@ class TestRandomPairing < Minitest::Test
     results = pairing(names)
     assert_equal(8, results.count)
   end
+# testing for how many arrays I have returned from the function
 
   def test_number_pairs_with_odd
     names = ["Katie Collins", "Aaron Camersi", "Derrick Gillispie", "Andrew Farley", "Adrian Sauls", "John Murphy", "Steven Miller", "Victoria Frame", "Stephanie Frame", "Chris Phelps", "Derick West", "Ty Cook", "Robert Caldwell", "Marcus Folks", "Tyler Richards", "Mike Handy", "Billy Bob"]
